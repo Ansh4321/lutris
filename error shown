@@ -1,0 +1,95 @@
+Command exited with code 512
+
+Traceback (most recent call last):
+
+  File "/usr/lib/python3.13/site-packages/lutris/exception_backstops.py", line 79, in error_wrapper
+    return handler(*args, **kwargs)
+
+  File "/usr/lib/python3.13/site-packages/lutris/util/jobs.py", line 131, in wrapper
+    repeat = func(*a, **kw)
+
+  File "/usr/lib/python3.13/site-packages/lutris/installer/commands.py", line 439, in _monitor_task
+    raise ScriptingError(_("Command exited with code %s") % command.return_code)
+
+lutris.installer.errors.ScriptingError: Command exited with code 512
+
+Lutris log:
+[INFO:2025-05-18 15:31:39,484:application]: Starting Lutris 0.5.19
+[INFO:2025-05-18 15:31:39,562:__init__]: Running migration: mess_to_mame
+[INFO:2025-05-18 15:31:39,562:__init__]: Running migration: migrate_hidden_ids
+[INFO:2025-05-18 15:31:39,563:__init__]: Running migration: migrate_steam_appids
+[INFO:2025-05-18 15:31:39,563:__init__]: Running migration: retrieve_discord_appids
+[INFO:2025-05-18 15:31:39,564:retrieve_discord_appids]: Updating Games Discord APP ID's
+[INFO:2025-05-18 15:31:39,564:__init__]: Running migration: migrate_sortname
+[INFO:2025-05-18 15:31:39,564:migrate_sortname]: Adding blank sortname field to database
+[INFO:2025-05-18 15:31:39,564:__init__]: Running migration: migrate_hidden_category
+[INFO:2025-05-18 15:31:39,565:migrate_hidden_category]: Moving hidden games to the '.hidden' category
+[INFO:2025-05-18 15:31:39,565:__init__]: Running migration: migrate_ge_proton
+[ERROR:2025-05-18 15:31:39,572:system]: ['vulkaninfo', '--summary'] command failed: Command '['vulkaninfo', '--summary']' returned non-zero exit status 1.
+[INFO:2025-05-18 15:31:41,356:startup]: "card1" is Intel Corporation CoffeeLake-H GT2 [UHD Graphics 630] (8086:3e9b 1028:0906 i915) Driver 25.0.5
+[INFO:2025-05-18 15:31:41,558:startup]: "card0" is Quadro T2000 (10de:1fb8 1028:0906 nvidia) Driver 570.144
+[ERROR:2025-05-18 15:31:41,558:startup]: i386 libgnutls.so.30 missing (needed by gnutls)
+[WARNING:2025-05-18 15:31:43,350:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/winetricks
+[WARNING:2025-05-18 15:31:45,962:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/umu
+[WARNING:2025-05-18 15:32:05,967:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/battleye_runtime
+[WARNING:2025-05-18 15:32:06,818:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/umu-games
+[WARNING:2025-05-18 15:32:08,719:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/eac_runtime
+[WARNING:2025-05-18 15:32:20,155:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/innoextract-1.9-linux
+[WARNING:2025-05-18 15:32:22,514:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/p7zip
+[WARNING:2025-05-18 15:32:24,246:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/gamecontrollerdb
+[WARNING:2025-05-18 15:32:26,316:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/network-tools
+[WARNING:2025-05-18 15:32:36,052:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/Ubuntu-18.04-i686
+[WARNING:2025-05-18 15:32:43,109:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/Ubuntu-18.04-x86_64
+[WARNING:2025-05-18 15:32:45,128:system]: Non existent path: /home/anshtiwari07/.local/share/lutris/runtime/dxvk-cache-tool
+[WARNING:2025-05-18 15:35:40,786:battlenet]: The Battle.net source is unavailable because Google protobuf could not be loaded: No module named 'google'
+[INFO:2025-05-18 15:35:41,078:application]: Starting Lutris 0.5.19
+[ERROR:2025-05-18 15:35:41,083:system]: ['vulkaninfo', '--summary'] command failed: Command '['vulkaninfo', '--summary']' returned non-zero exit status 1.
+[INFO:2025-05-18 15:35:42,880:startup]: "card1" is Intel Corporation CoffeeLake-H GT2 [UHD Graphics 630] (8086:3e9b 1028:0906 i915) Driver 25.0.5
+[INFO:2025-05-18 15:35:43,215:startup]: "card0" is Quadro T2000 (10de:1fb8 1028:0906 nvidia) Driver 570.144
+[ERROR:2025-05-18 15:35:43,215:startup]: i386 libgnutls.so.30 missing (needed by gnutls)
+[INFO:2025-05-18 15:35:50,708:interpreter]: Runner wine needs to be installed
+[INFO:2025-05-18 15:36:47,202:file_box]: Download completed
+[INFO:2025-05-18 15:36:47,202:files_box]: All files available
+[INFO:2025-05-18 15:36:47,203:installerwindow]: All files are available, continuing install
+[INFO:2025-05-18 15:36:47,206:installerwindow]: Launching installer commands
+[INFO:2025-05-18 15:36:47,217:wine]: Creating a win64 prefix in /home/anshtiwari07/Games/solo-levelingarise
+[INFO:2025-05-18 15:36:47,217:wine]: Winepath: /home/anshtiwari07/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+[INFO:2025-05-18 15:36:57,321:wine]: win64 Prefix created in /home/anshtiwari07/Games/solo-levelingarise
+[WARNING:2025-05-18 15:36:57,492:runner]: Accessing game config while runner wasn't given one.
+[WARNING:2025-05-18 15:38:37,731:runner]: Accessing game config while runner wasn't given one.
+[ERROR:2025-05-18 15:38:45,891:errors]: Command exited with code 512
+[ERROR:2025-05-18 15:38:45,891:exception_backstops]: Error handling timeout function: Command exited with code 512
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/lutris/exception_backstops.py", line 79, in error_wrapper
+    return handler(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/lutris/util/jobs.py", line 131, in wrapper
+    repeat = func(*a, **kw)
+  File "/usr/lib/python3.13/site-packages/lutris/installer/commands.py", line 439, in _monitor_task
+    raise ScriptingError(_("Command exited with code %s") % command.return_code)
+lutris.installer.errors.ScriptingError: Command exited with code 512
+[INFO:2025-05-18 15:50:33,249:interpreter]: Cancelling installation of Solo Leveling:ARISE
+[WARNING:2025-05-18 15:50:49,541:battlenet]: The Battle.net source is unavailable because Google protobuf could not be loaded: No module named 'google'
+[INFO:2025-05-18 15:50:49,845:application]: Starting Lutris 0.5.19
+[ERROR:2025-05-18 15:50:49,850:system]: ['vulkaninfo', '--summary'] command failed: Command '['vulkaninfo', '--summary']' returned non-zero exit status 1.
+[INFO:2025-05-18 15:50:51,637:startup]: "card1" is Intel Corporation CoffeeLake-H GT2 [UHD Graphics 630] (8086:3e9b 1028:0906 i915) Driver 25.0.5
+[INFO:2025-05-18 15:50:51,881:startup]: "card0" is Quadro T2000 (10de:1fb8 1028:0906 nvidia) Driver 570.144
+[ERROR:2025-05-18 15:50:51,881:startup]: i386 libgnutls.so.30 missing (needed by gnutls)
+[INFO:2025-05-18 15:51:03,256:file_box]: Download completed
+[INFO:2025-05-18 15:51:03,256:files_box]: All files available
+[INFO:2025-05-18 15:51:03,257:installerwindow]: All files are available, continuing install
+[INFO:2025-05-18 15:51:03,263:installerwindow]: Launching installer commands
+[INFO:2025-05-18 15:51:03,278:wine]: Creating a win64 prefix in /home/anshtiwari07/Games/solo-levelingarise
+[INFO:2025-05-18 15:51:03,279:wine]: Winepath: /home/anshtiwari07/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+[INFO:2025-05-18 15:51:09,354:wine]: win64 Prefix created in /home/anshtiwari07/Games/solo-levelingarise
+[WARNING:2025-05-18 15:51:09,519:runner]: Accessing game config while runner wasn't given one.
+[WARNING:2025-05-18 15:52:07,665:runner]: Accessing game config while runner wasn't given one.
+[ERROR:2025-05-18 15:52:17,749:errors]: Command exited with code 512
+[ERROR:2025-05-18 15:52:17,749:exception_backstops]: Error handling timeout function: Command exited with code 512
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/lutris/exception_backstops.py", line 79, in error_wrapper
+    return handler(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/lutris/util/jobs.py", line 131, in wrapper
+    repeat = func(*a, **kw)
+  File "/usr/lib/python3.13/site-packages/lutris/installer/commands.py", line 439, in _monitor_task
+    raise ScriptingError(_("Command exited with code %s") % command.return_code)
+lutris.installer.errors.ScriptingError: Command exited with code 512
